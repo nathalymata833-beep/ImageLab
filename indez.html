@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ImageLab - Herramientas de Imagen Gratis</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header class="hero">
+
+<h1>ImageLab Tools</h1>
+
+<p>Herramientas online gratis para editar imágenes</p>
+
+</header>
+
+<section class="grid">
+
+<div class="tool-card" onclick="openTool('passport')">
+
+<h3>Foto para Pasaporte</h3>
+<p>Crea fotos tipo documento.</p>
+
+</div>
+
+<div class="tool-card" onclick="openTool('resize')">
+
+<h3>Redimensionar Imagen</h3>
+<p>Cambia tamaño de fotos.</p>
+
+</div>
+
+<div class="tool-card" onclick="openTool('convert')">
+
+<h3>Convertir JPG a PNG</h3>
+<p>Cambia formato de imagen.</p>
+
+</div>
+
+</section>
+
+<section id="workspace">
+
+<h2>Editor</h2>
+
+<input type="file" id="upload">
+
+<canvas id="canvas"></canvas>
+
+<button id="download">Descargar</button>
+
+</section>
+
+<script src="script.js"></script>
+
+<<script src="tools/passport.js"></script>
+<script src="tools/resize.js"></script>
+<script src="tools/convert.js"></script>
+<script src="script.js"></script>/body>
+</html>
